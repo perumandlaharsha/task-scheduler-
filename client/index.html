@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Creative Task Scheduler</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1 class="title">✨ Task Scheduler</h1>
+    <form id="taskForm" class="task-form" aria-label="Add new task">
+      <label for="taskInput" class="sr-only">Task description</label>
+      <input
+        type="text"
+        id="taskInput"
+        placeholder="What needs to be done?"
+        required
+        autocomplete="off"
+        class="task-input"
+      />
+
+      <label for="dateInput" class="sr-only">Due date</label>
+      <input
+        type="date"
+        id="dateInput"
+        required
+        class="date-input"
+        aria-describedby="dateHelp"
+      />
+      <small id="dateHelp" class="helper-text">Select a due date</small>
+
+      <button type="submit" class="btn btn-primary">Add Task</button>
+    </form>
+
+    <ul id="taskList" class="task-list" aria-live="polite" aria-relevant="additions"></ul>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
