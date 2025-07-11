@@ -38,4 +38,22 @@ button {
 button:hover {
   background-color: #45a049;
 }
+#taskList {
+  list-style: none;
+  padding: 0;
+}
+
+#taskList li {
+  background: #e2e8f0;
+  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.task-date {
+  font-size: 0.85em;
+  color: #555;
+}
 
